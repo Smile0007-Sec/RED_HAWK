@@ -5,7 +5,11 @@ require 'var.php';
 echo $cln;
 function update()
     {
-        echo "\n\e[91m\e[1m[+] RED HAWK UPDATE UTILITY [+]\nUpdate in progress, please wait...\n\n$cln";
+        echo "\n\e[91m\e[1m[+] _ _       ___   ___   ___ _____  __  __  ____
+/ ___| _ __ ___ (_) | ___ / _ \ / _ \ / _ \___  | \ \/ / / ___|  ___  ___
+\___ \| '_ ` _ \| | |/ _ \ | | | | | | | | | / /   \  /  \___ \ / _ \/ __|
+ ___) | | | | | | | |  __/ |_| | |_| | |_| |/ /    /  \   ___) |  __/ (__
+|____/|_| |_| |_|_|_|\___|\___/ \___/ \___//_/    /_/\_\ |____/ \___|\___| [+]\nUpdate in progress, please wait...\n\n$cln";
         system("git fetch origin && git reset --hard origin/master && git clean -f -d");
         echo $bold . $fgreen . "[i] Job finished successfully! Please Restart RED HAWK \n" . $cln;
         exit;
